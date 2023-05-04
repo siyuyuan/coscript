@@ -1,8 +1,5 @@
 
 import os
-os.environ["CUDA_VISIBLE_DEVICES" ] ="0"
-os.environ["WANDB_DISABLED"] = "true"
-
 import json
 import random
 import heapq
@@ -52,6 +49,4 @@ def blue(address):
 
 wnl = WordNetLemmatizer()
 
-blue('test_dataset_clean_t5-3b_coscript2.json')
-blue('test_dataset_clean_t5-3b_wiki.json')
-blue('test_dataset_clean_t5-3b_retrieve_line.json')
+blue('YOUR_RESULT')
