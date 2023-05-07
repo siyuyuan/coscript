@@ -44,14 +44,14 @@ Coscript is derived from wikiHow and encompasses 15 daily life goal categories. 
 However, it is important to emphasize that sensitive and high-risk domains, including medical, legal, and high-stakes financial advice, are excluded from the dataset to minimize potential risks related to inaccurate or misleading information. 
 Researchers and developers can leverage this dataset to build models that accurately understand and respond to user queries on various non-sensitive, non-critical topics.
 
+### wikiHow Source
+The content available on wikiHow is shared under a Creative Commons License (CC-BY-NC-SA)1, which permits others to share, copy, distribute, and adapt the content for non-commercial purposes. In our research, we use wikiHow as an initial dataset for providing examples to construct our dataset. Our dataset is released on GitHub and is only used to advance academic research on language planning with more complex and diverse goals and constraints. Therefore, we emphasize that our usage aligns with the requirements under the license.
 
 ### Factuality and Biases
 We recognize that the factuality of generated content is crucial, especially in high stakes scenarios. 
 Therefore, during the validation and testing phases, annotators manually verify the adherence of generated scripts to constrained goals. 
 They also assess and revise the content to minimize hallucinations, factual errors, and any inappropriate or misleading information, which helps ensure that the generated content is reliable and of high quality.
 Furthermore, we annotated the limitations section regarding data distribution bias favoring causal LMs and took steps to manually correct the dev and test sets to mitigate this bias. 
-
-
 
 ### Toxic Contents
 Previous work found that language models (including GPT-3s) may generate toxic contents.
