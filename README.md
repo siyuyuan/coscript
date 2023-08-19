@@ -71,21 +71,24 @@ By ensuring these boundaries are respected and by providing clear reminders of u
 If you find our paper or resources useful, please kindly cite our paper. If you have any questions, please [contact us](mailto:syyuan21@m.fudan.edu.cn)!
 
 ```latex
-@inproceedings{chen-etal-2023-say,
-    title = "Say What You Mean! Large Language Models Speak Too Positively about Negative Commonsense Knowledge",
-    author = "Chen, Jiangjie  and
-      Shi, Wei  and
+@inproceedings{yuan-etal-2023-distilling,
+    title = "Distilling Script Knowledge from Large Language Models for Constrained Language Planning",
+    author = "Yuan, Siyu  and
+      Chen, Jiangjie  and
       Fu, Ziquan  and
-      Cheng, Sijie  and
-      Li, Lei  and
-      Xiao, Yanghua",
+      Ge, Xuyang  and
+      Shah, Soham  and
+      Jankowski, Charles  and
+      Xiao, Yanghua  and
+      Yang, Deqing",
     booktitle = "Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
     month = jul,
     year = "2023",
     address = "Toronto, Canada",
     publisher = "Association for Computational Linguistics",
-    url = "https://aclanthology.org/2023.acl-long.550",
-    pages = "9890--9908",
-    abstract = "Large language models (LLMs) have been widely studied for their ability to store and utilize positive knowledge. However, negative knowledge, such as {``}lions don{'}t live in the ocean{''}, is also ubiquitous in the world but rarely mentioned explicitly in text.What do LLMs know about negative knowledge?This work examines the ability of LLMs on negative commonsense knowledge.We design a constrained keywords-to-sentence generation task (CG) and a Boolean question answering task (QA) to probe LLMs.Our experiments reveal that LLMs frequently fail to generate valid sentences grounded in negative commonsense knowledge, yet they can correctly answer polar yes-or-no questions.We term this phenomenon the belief conflict of LLMs.Our further analysis shows that statistical shortcuts and negation reporting bias from language modeling pre-training cause this conflict.",
+    url = "https://aclanthology.org/2023.acl-long.236",
+    doi = "10.18653/v1/2023.acl-long.236",
+    pages = "4303--4325",
+    abstract = "In everyday life, humans often plan their actions by following step-by-step instructions in the form of goal-oriented scripts. Previous work has exploited language models (LMs) to plan for abstract goals of stereotypical activities (e.g., {``}make a cake{''}), but leaves more specific goals with multi-facet constraints understudied (e.g., {``}make a cake for diabetics{''}). In this paper, we define the task of constrained language planning for the first time. We propose an over-generate-then-filter approach to improve large language models (LLMs) on this task, and use it to distill a novel constrained language planning dataset, Coscript, which consists of 55,000 scripts. Empirical results demonstrate that our method significantly improves the constrained language planning ability of LLMs, especially on constraint faithfulness. Furthermore, Coscript is demonstrated to be quite effective in endowing smaller LMs with constrained language planning ability.",
 }
 ```
